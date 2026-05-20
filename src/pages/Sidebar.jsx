@@ -45,7 +45,7 @@ function Sidebar() {
   }
 
 return (
-    <div className='flex h-screen m-0 bg-gray-950'>
+    <div className={`flex h-screen m-0 ${temaEscuro ? 'bg-gray-950' : 'bg-gray-50'}`}>
       <div className={`w-64 h-full border-r flex flex-col p-5 gap-4 ${temaEscuro ? 'bg-gray-900 text-white border-gray-800' : 'bg-gray-100 text-gray-900 border-gray-300'}`}>
         <button className='text-left text-sm opacity-80' onClick={mudarTema}>
           {temaEscuro ? '☀️ Modo Claro' : '🌙 Modo Escuro'}
