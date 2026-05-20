@@ -1,4 +1,4 @@
-# TaskFlow
+# Kanban
 
 Aplicação de gerenciamento de projetos com quadro Kanban, construída com React.
 
