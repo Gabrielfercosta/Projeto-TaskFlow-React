@@ -1,8 +1,42 @@
-# React + Vite
+# TaskFlow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação de gerenciamento de projetos com quadro Kanban, construída com React.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Autenticação simples com controle de rotas protegidas
+- Criação e exclusão de projetos
+- Quadro Kanban por projeto com as colunas: Backlog, A Fazer, Em Progresso e Concluído
+- Drag and drop de tarefas entre colunas
+- Busca de projetos com debounce
+- Dashboard com estatísticas gerais (total de projetos, tarefas concluídas e pendentes)
+- Tema claro/escuro
+- Persistência via localStorage
+
+## Tecnologias e conceitos
+
+**Stack**
+- React 18
+- React Router DOM
+- @dnd-kit/core (drag and drop)
+- Tailwind CSS
+- Vitest (testes)
+
+**Conceitos React utilizados**
+- `useReducer`, `useState`, `useEffect`, `useMemo`
+- `Context API` — `AuthContext` e `ThemeContext`
+- Hook customizado `useDebounce`
+- Rotas protegidas e dinâmicas com React Router
+
+## Como rodar
+
+```bash
+npm install
+npm run dev
+```
+
+## Testes
+
+```bash
+npm run test
+```
