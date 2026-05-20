@@ -46,7 +46,7 @@ function Kanban({ id, navigate, projetoAtual }) {
       <Sidebar /> 
       <div className={`flex-1 p-8 overflow-x-auto flex flex-col gap-6 ${temaEscuro ? 'bg-gray-950 text-white' : 'bg-gray-50 text-gray-900'}`}>
         <div>
-          <h1 className='text-2xl font-bold'>TaskFlow - Projeto: {projetoAtual.nome}</h1>
+          <h1 className='text-2xl font-bold'>Kanban - Projeto: {projetoAtual.nome}</h1>
         </div>
         <div className='flex items-center gap-2'>
           <input value={novaTarefa} onChange={e => setNovaTarefa(e.target.value)} placeholder="Nova tarefa..." className={`border rounded px-3 py-2 text-sm focus:outline-none focus:border-blue-500 w-64 ${temaEscuro ? 'bg-gray-900 border-gray-800 text-white' : 'bg-white border-gray-300 text-black'}`} />
