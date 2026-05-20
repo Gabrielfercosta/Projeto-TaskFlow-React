@@ -15,12 +15,10 @@ Aplicação de gerenciamento de projetos com quadro Kanban, construída com Reac
 
 ## Tecnologias e conceitos
 
-**Stack**
 - React 18
-- React Router DOM
 - @dnd-kit/core (drag and drop)
 - Tailwind CSS
-- Vitest (testes)
+- Vitest
 
 **Conceitos React utilizados**
 - `useReducer`, `useState`, `useEffect`, `useMemo`
@@ -31,7 +29,6 @@ Aplicação de gerenciamento de projetos com quadro Kanban, construída com Reac
 ## Como rodar
 
 ```bash
-npm install
 npm run dev
 ```
 
